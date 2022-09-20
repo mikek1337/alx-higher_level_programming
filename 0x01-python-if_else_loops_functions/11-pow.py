@@ -7,6 +7,9 @@ def pow(a, b):
     else:
         i = b
     while(i > 0):
-        mul *= a
+        if(b < 0):
+            mul /= a
+        else:
+            mul *= a
         i -= 1
     return mul
