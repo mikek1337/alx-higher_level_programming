@@ -4,6 +4,8 @@ def pow(a, b):
     mul = 1
     if(b < 0):
         i = abs(b);
+    else:
+        i = b
     while(i > 0):
         mul *= a
         i -= 1
