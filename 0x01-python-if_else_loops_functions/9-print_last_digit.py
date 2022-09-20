@@ -7,4 +7,7 @@ def print_last_digit(number):
         mod = mod * -1
         return mod
     else:
-        return number % 10
+        mod = number % 10
+
+    print(mod, end='')
+    return mod
