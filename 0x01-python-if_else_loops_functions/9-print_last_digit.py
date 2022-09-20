@@ -2,10 +2,8 @@
 def print_last_digit(number):
     negative = 0
     if (number < 0):
-        negative = number * -1
-        mod = negative % 10
-        mod = mod * -1
-        return mod
+        number = number * -1
+        mod = number % 10
     else:
         mod = number % 10
 
