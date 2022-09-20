@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-negative = 0;
-if(number < 0):
+negative = 0
+if (number < 0):
     negative = number
     number = number * -1
 lastDigit = number % 10
