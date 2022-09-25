@@ -2,4 +2,4 @@
 
 def print_list_integer(my_list=[]):
     for i in my_list:
-        print("{i}".format(i=i))
+        print("{:d}".format(i))
