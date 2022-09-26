@@ -9,4 +9,4 @@ def print_matrix_integer(matrix=[[]]):
             if count != (len(i) - 1):
                 print(" ", end="")
             count += 1
-        print("$")
+        print(" ")
