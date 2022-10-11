@@ -10,6 +10,8 @@ Attributes:
     None
 
 """
+
+
 class Square:
     '''Represents squares'''
     pass
