@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Modeule square class"""
+
 
 class Square:
     '''Represent square'''
