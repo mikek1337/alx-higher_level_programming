@@ -1,0 +1,12 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1,1)
+2
+
+>>> add_integer(2, 3)
+5
+
+>>> add_integer(1)
+99
+
+>>> add_integer('string',1)
+TypeError: a must be an integer
