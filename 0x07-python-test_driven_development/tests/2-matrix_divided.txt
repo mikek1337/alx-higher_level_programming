@@ -1,0 +1,13 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[1,2,5], [3,4,6]]
+
+>>> matrix_divided(matrix,0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+>>> matrix = [[1, '2', 3]]
+>>> matrix_divided(matrix,1)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix(list of lists) of integers/floats
