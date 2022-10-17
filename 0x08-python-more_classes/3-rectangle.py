@@ -38,23 +38,17 @@ class Rectangle:
         self.__width = value
 
     def area(self):
-        """
-        Return the area of the retangle
-        """
+        """Return the area of the retangle"""
         return (self.height * self.width)
 
     def perimeter(self):
-        """
-        Return the perimeter of a rectangle
-        """
+        """Return the perimeter of a rectangle"""
         if self.height == 0 or self.width == 0:
             return (0)
         return (2*(self.height + self.width))
 
     def __str__(self):
-        """
-        prints rectangle using width and height with # character
-        """
+        """prints rectangle using width and height with # character"""
         rect = []
         if self.width == 0 or self.height == 0:
             return ("")
