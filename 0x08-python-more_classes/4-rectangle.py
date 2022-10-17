@@ -4,9 +4,6 @@ Rectangle module
 """
 
 
-from inspect import _void
-
-
 class Rectangle:
     """
     Rectangle class
