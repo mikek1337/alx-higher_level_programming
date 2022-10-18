@@ -10,7 +10,7 @@
 Traceback (most recent call last):
     ...
 TypeError: size must be >= 0
->>>print_square("1")
+>>> print_square("1")
 Traceback (most recent call last):
     ...
 TypeError: size must be an integer
