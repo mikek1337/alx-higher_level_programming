@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+"""Module to determine the instance"""
+
+
+def is_kind_of_class(obj, a_class):
+    """check if it is the same instance"""
+    return isinstance(obj, a_class)
