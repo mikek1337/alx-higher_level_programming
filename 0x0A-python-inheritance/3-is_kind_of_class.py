@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Module to determine the instance"""
+"""Module to determine the instance of an object"""
 
 
 def is_kind_of_class(obj, a_class):
