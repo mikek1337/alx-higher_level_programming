@@ -6,6 +6,13 @@
 class BaseGeometry:
     """Base class for geometry hope this explains needs more """
 
+    def __init__(self, width, height):
+        """Initialize new rectangle"""
+        self.integer_validator("width", width)
+        self.width = width
+        self.integer_validator("height", height)
+        self.height = height
+
     def area(self):
         """unimplemented area method this doc exists"""
         raise Exception("area() is not implemented")
