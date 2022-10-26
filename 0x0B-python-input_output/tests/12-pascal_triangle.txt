@@ -1,0 +1,12 @@
+
+>>> pascal_triangle = __import__('12-pascal_triangle').pascal_triangle
+
+
+>>> data = pascal_triangle(5)
+>>> for row in triangle:
+>>>     print("[{}]".format(",".join([str(x) for x in row])))
+[1]
+[1,1]
+[1,2,1]
+[1,3,3,1]
+[1,4,6,4,1]
