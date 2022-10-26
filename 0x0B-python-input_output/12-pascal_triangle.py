@@ -10,7 +10,7 @@ def pascal_triangle(n):
     function pascal triangle
     """
     if n <= 0:
-        return [[]]
+        return []
     trilist = [[1]]
     for i in range(n-1):
         j = 0
