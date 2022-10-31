@@ -78,3 +78,34 @@ class Rectangle(Base):
             for w in range(self.width):
                 print("#", end="")
             print("")
+
+    def __str__(self):
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+
+    def update(self, *args, **kwargs):
+        """Updates the value of the attributes"""
+        i = 0
+        vars = ["id", "_Rectangle__width", "_Rectangle__height", "_Rectangle__x", "_Rectangle__yy"]
+        while i < len(args):
+          
+            self.__dict__[vars[i]] = args[i]
+            i += 1
+
+        for key, arg in kwargs.items():
+            if key == "id":
+                self.id = arg
+            else:
+                self.__dict__['_Rectangle__'+key] = arg
+    
+    def to_dictionary(self):
+        """Converts object to dictionary representation"""
+        return{
+            "id":self.id,
+            "width":self.width,
+            "height":self.height,
+            "x":self.x,
+            "y":self.y
+            }
+
+
+
