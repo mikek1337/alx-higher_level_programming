@@ -19,7 +19,9 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(r3.id, 12)
 
     def validate_attributes_testcase(self):
-        pass
+        with self.assertRaises(TypeError) as err:
+            Rectangle(10, "2")
+        self.assertEqual('[TypeError] height must be an integer', err.exception)
 
 
 if __name__ == '__main__':
