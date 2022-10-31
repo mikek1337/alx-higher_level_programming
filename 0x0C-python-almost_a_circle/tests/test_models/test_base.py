@@ -4,8 +4,11 @@
 
 import unittest
 from models.base import Base
+
+
 class TestStringMethods(unittest.TestCase):
     """Test class"""
+
     def test_case(self):
         b1 = Base()
         self.assertEqual(b1.id, 1)
@@ -21,6 +24,7 @@ class TestStringMethods(unittest.TestCase):
 
         b5 = Base()
         self.assertEqual(b5.id, 4)
+
 
 if __name__ == '__main__':
     unittest.main()
