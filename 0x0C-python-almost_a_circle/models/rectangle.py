@@ -33,24 +33,29 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """Sets the height value"""
         self.handleError("height", value)
         self.__height = value
 
     @property
     def x(self):
+        """Return's the x value"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """Assign's the x value"""
         self.handleError("x", value)
         self.__x = value
 
     @property
     def y(self):
+        """Returns the y value"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """sets the y value"""
         self.handleError("y", value)
         self.__y = value
 
@@ -58,7 +63,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def handleError(self, name, value):
-
+        """Handle type and value error"""
         if type(value) != int:
             raise TypeError("{} must be integer".format(name))
 
@@ -80,6 +85,7 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
+        """String format on print"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
