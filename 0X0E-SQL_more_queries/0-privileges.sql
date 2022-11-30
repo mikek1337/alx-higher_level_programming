@@ -1,2 +1,3 @@
 -- Show user privlage
-SHOW GRANTS FOR `sops`@`localhost`;
+SHOW GRANTS FOR `user_0d_1`@`localhost`;
+SHOW GRANTS FOR `user_0d_2`@`localhost`;
