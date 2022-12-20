@@ -1,0 +1,1 @@
+### Javascript socpes and closures
