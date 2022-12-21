@@ -7,7 +7,7 @@ import MySQLdb
 
 if __name__ == "__main__":
     conn = MySQLdb.connect(
-        host="localhost", user=sys.argv[1], password=sys.argv[2], database=sys.argv[3])
+        host="localhost", sys.argv[1], sys.argv[2], sys.argv[3])
     data = conn.cursor()
     query = "SELECT * FROM states WHERE name={statename} ORDER BY id".format(
         statename='"'+sys.argv[4]+'"')
