@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Connect to database and execute query."""
 import MySQLdb
 import sys
 if __name__ == "__main__":
