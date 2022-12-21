@@ -2,12 +2,11 @@
 
 import MySQLdb
 import sys
-if (len(sys.argv) > 1):
-
+if __name__ == "__main__":
     conn = MySQLdb.connect("localhost", sys.argv[1], sys.argv[2], sys.argv[3])
 
     data = conn.cursor()
-    data.execute("SELECT * FROM states")
+    data.execute("SELECT * FROM states ORDER BY id")
     result = data.fetchall()
 
     for state in result:
