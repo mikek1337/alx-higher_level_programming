@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""delete all that is a"""
+"""delete all that is a."""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -13,5 +13,5 @@ if __name__ == "__main__":
     session = Session()
     for state in session.query(State).order_by(State.id):
         if "a" in state.name:
-           session.delete(state)
+            session.delete(state)
     session.commit()
