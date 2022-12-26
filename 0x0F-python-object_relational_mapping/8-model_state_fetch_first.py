@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-fetch the first object
-"""
+"""fetch the first object."""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
