@@ -1,3 +1,3 @@
 #!/bin/bash
 # Display all methods the server accepts
-curl -sI "$1" | grep -i Allow
+curl -sI "$1" | grep -i Allow | cut -d " " -f2
