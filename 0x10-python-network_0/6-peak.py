@@ -2,6 +2,6 @@
 
 def find_peak(list_of_integer):
     """Find the peak number from a list."""
-    if list_of_integer is not None:
-        sorted_list = list_of_integer.sort()
-        return sorted_list[len(sorted_list) - 1]
+    if len(list_of_integer) > 0:
+        list_of_integer.sort()
+        return list_of_integer[len(list_of_integer) - 1]
