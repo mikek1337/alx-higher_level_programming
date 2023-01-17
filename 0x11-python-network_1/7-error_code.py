@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Handle error using request"""
+"""Handle error using request."""
 
 if __name__ == "__main__":
     import requests
