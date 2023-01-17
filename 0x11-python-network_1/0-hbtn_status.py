@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-"""urllib module test."""
+"""A script that
+- fetches https://intranet.hbtn.io/status.
+- uses urlib package
+"""
 
 import urllib.request
 if __name__ == "__main__":
