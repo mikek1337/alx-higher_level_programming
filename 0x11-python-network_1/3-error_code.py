@@ -7,4 +7,6 @@ if __name__ == "__main__":
     import urllib.request
     import sys
     with urllib.request.urlopen(sys.argv[1]) as response:
-        urllib.error.HTTPError(sys.argv[1])
+        urllib.error.HTTPError(response)
+        content = response.read()
+        print(content.decode('utf-8'))
