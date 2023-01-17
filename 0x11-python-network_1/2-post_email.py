@@ -8,6 +8,7 @@ if __name__ == "__main__":
     data = {"email": sys.argv[2]}
     data = str(data)
     data = data.encode('utf-8')
+    print(data)
     req = urllib.request.Request(
         sys.argv[1], data=data, method="POST")
     with urllib.request.urlopen(req) as response:
