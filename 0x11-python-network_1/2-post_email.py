@@ -12,3 +12,4 @@ if __name__ == "__main__":
         sys.argv[1], data=data, method="POST")
     with urllib.request.urlopen(req) as response:
         content = response.read()
+        print(content)
