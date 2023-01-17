@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""urllib module test"""
+"""urllib module test."""
 
 import urllib.request
 if __name__ == "__main__":
