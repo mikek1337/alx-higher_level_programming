@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+
+"""urllib module test"""
+
 import urllib.request
 
 req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
