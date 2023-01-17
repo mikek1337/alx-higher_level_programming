@@ -7,5 +7,6 @@ if __name__ == "__main__":
     import sys
     try:
         res = requests.get(sys.argv[1])
+        print(res.text)
     except requests.HTTPError as e:
         print("Error code: {}".format(e.errno))
