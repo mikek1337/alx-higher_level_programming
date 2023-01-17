@@ -13,4 +13,4 @@ if __name__ == "__main__":
         the_page = response.read()
         print("Body response:")
         print("\t - type: {type} \n\t - content: {res} \n\t - utf8 content: {content}".format(
-            type=type(response.read()), res=the_page, content=the_page.decode()))
+            type=type(response.read()), res=the_page, content=the_page.decode('utf-8')))
