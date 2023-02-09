@@ -1,4 +1,4 @@
-#!/snap/bin/node
+#!/usr/bin/node
 const process = require('process');
 const fs = require('fs');
 const args = process.argv;
